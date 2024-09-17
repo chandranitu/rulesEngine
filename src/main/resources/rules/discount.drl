@@ -1,0 +1,11 @@
+package rules
+
+rule "Apply 10% Discount"
+when
+    $order: Order( amount > 100 )
+then
+    $order.setDiscount(10);
+end
+
+
+
