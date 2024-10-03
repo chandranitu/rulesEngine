@@ -1,9 +1,10 @@
-package com.example.demo;
+package com.example.service;
 
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
-import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Service;
+
+import com.example.model.PurchaseOrder;
 
 @Service
 public class DroolsService {

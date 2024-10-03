@@ -1,6 +1,6 @@
 <kmodule xmlns="http://www.drools.org/xsd/kmodule">
-    <kbase name="rules" packages="com.example.rules">
+    <kbase name="rules" packages="rules">
         <!-- Define the KieSession -->
-        <ksession name="ksession-rules" default="true"/>
+        <ksession name="ksession-" type="stateful" default="true"/>
     </kbase>
 </kmodule>
