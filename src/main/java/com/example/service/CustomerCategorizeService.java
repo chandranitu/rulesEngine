@@ -1,11 +1,10 @@
 package com.example.service;
-import com.example.model.CustomerRequest;
-
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.springframework.stereotype.Service;
 
-import com.example.model.CustomerType;
+import com.example.model.customer.CustomerType;
+import com.example.request.CustomerRequest;
 
 @Service
 public class CustomerCategorizeService {

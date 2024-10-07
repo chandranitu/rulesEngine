@@ -7,20 +7,40 @@ https://medium.com/codex/spring-boot-with-drools-engine-7119774c559f
 
 http://localhost:8080/swagger-ui/index.html
 
+mvn clean install
 mvn clean install -U
 mvn dependency:tree
+mvn spring-boot:run
 
-working  post method
-http://localhost:8080/order/customertype
+# Fee calculation
+http://localhost:8080/fee/calculation
 {
-  "age": 0,
-  "gender": "M",
-  "id": 0,
-  "numberOfOrders": 0
+    "accountType": "Business",
+    "paymentModel": "Prepaid",
+    "tollingType": "Tag",
+    "numberOfVehicles": 25,
+    "rangePlan": "Silver",
+    "tagFee": 50.00,
+    "openingFee": 25.00,
+    "mailingFee": 10.00,
+    "securityDeposit": 0.00,
+    "topUpAmount": 0.00,
+    "lowBalance": 0.00
 }
 
 
-#post->raw->json
+# working  post method
+http://localhost:8080/order/customertype
+
+{
+  "age": 51,
+  "gender": "M",
+  "id": 0,
+  "numberOfOrders": 50
+}
+
+
+# post->raw->json
 http://localhost:8080/order/discount
 
 {

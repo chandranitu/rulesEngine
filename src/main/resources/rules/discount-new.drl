@@ -1,8 +1,8 @@
 package rules
 
-import com.example.model.CustomerRequest
-import com.example.model.CustomerCategory;
-global com.example.model.CustomerType customerType;
+import com.example.request.CustomerRequest
+import com.example.model.customer.CustomerCategory;
+global com.example.model.customer.CustomerType customerType;
 
 dialect "mvel"
 

@@ -1,0 +1,7 @@
+package rules
+
+import com.example.model.fastag.FeeRequest;
+import java.math.BigDecimal;
+
+dialect "mvel"
+

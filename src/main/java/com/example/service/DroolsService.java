@@ -4,7 +4,7 @@ import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.springframework.stereotype.Service;
 
-import com.example.model.PurchaseOrder;
+import com.example.model.purchase.PurchaseOrder;
 
 @Service
 public class DroolsService {
